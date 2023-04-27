@@ -21,15 +21,15 @@ export default function Home({ allPostsData }) {
     {
       imageURI:
         "https://cdn.kastatic.org/images/lohp/graph_collage@2x.png",
-      text: "In a recent study, students were over twice as likely to meet grade-level standards with Khan Academy. Districts across the country are partnering with us to ensure all their students succeed.",
-      title: "Khan Academy boosts student learning",
+      text: "Welcome to MyWebClass! Here, you can learn anything your heart desires. Our online platform is designed to help you explore and expand your knowledge in a wide range of subjects. Whether you are a student, a professional, or just someone who wants to learn new things, we have something for you.",
+      title: "Learn Anything with Our Comprehensive Resources",
       imageOnRight: false,
     },
     {
       imageURI:
         "https://cdn.kastatic.org/images/lohp/faces_collage@2x.png",
-      text: "We empower teachers to support their entire classroom. 90% of US teachers who have used Khan Academy have found us effective.      ",
-      title: "“I’m finally able to truly differentiate my classroom. This has been priceless for my students’ engagement.”",
+      text: "At MyWebClass, we believe that every child deserves the opportunity to learn and reach their full potential. That is why we have created a range of courses and resources specifically designed to help children of all ages and abilities develop their skills and knowledge in a fun and engaging way.",
+      title: "Empowering Every Child to Succeed: Providing Top-Quality Education for All",
       imageOnRight: true,
     },
   ];
