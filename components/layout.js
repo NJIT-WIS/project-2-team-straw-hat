@@ -2,9 +2,11 @@ import Head from 'next/head'
 import Image from 'next/image'
 import Script from 'next/script'
 
-import styles from './layout.module.css'
+import styles from '../styles/layout.module.css'
 import utilStyles from '../styles/utils.module.css'
 import Link from 'next/link'
+import Nav from './Nav'
+import Footer from './footer'
 
 const name = '[Your Name]'
 export const siteTitle = 'MyWebClass.org'
@@ -34,7 +36,8 @@ export default function Layout({ children, home }) {
           console.log(`script loaded correctly, window.FB has been populated`)
         }
       />
-      <header className={styles.header}>
+      <Nav/>
+      {/* <header className={styles.header}>
         {home ? (
           <>
             <Image
@@ -66,13 +69,14 @@ export default function Layout({ children, home }) {
             </h2>
           </>
         )}
-      </header>
+      </header> */}
       <main>{children}</main>
       {!home && (
         <div className={styles.backToHome}>
           <Link href="/">← Back to home</Link>
         </div>
       )}
+      <Footer/>
     </div>
   )
 }

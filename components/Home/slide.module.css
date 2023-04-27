@@ -1,0 +1,42 @@
+.slide {
+  height: 70vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slide_rev {
+  height: 70vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row-reverse;
+}
+
+.left {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.left img {
+  width: 400px;
+  height: auto;
+}
+
+.right {
+  flex: 1;
+  padding: 140px;
+}
+
+.right p {
+  font-size: 1.4em;
+}
+
+.right h3 {
+  font-family: "Playfair Display", serif;
+  font-size: 1.8em;
+}
