@@ -1,6 +1,8 @@
-import Styles from "../styles/Footer.module.css";
 import { BsFacebook, BsInstagram, BsLinkedin, BsYoutube } from "react-icons/bs";
+
 import { FaTwitter } from "react-icons/fa";
+import Link from "next/link";
+import Styles from "../styles/Footer.module.css";
 
 export default function Footer() {
   return (
@@ -11,15 +13,27 @@ export default function Footer() {
       <div className={Styles.right}>
         <h3>Socials</h3>
         <div className={Styles.socials}>
-          <BsFacebook />
-          <BsInstagram />
-          <BsLinkedin />
-          <BsYoutube />
-          <FaTwitter />
+          <Link href={"https://www.facebook.com"}>
+            <BsFacebook />
+          </Link>
+          <Link href={"https://www.instagram.com"}>
+            <BsInstagram />
+          </Link>
+          <Link href={"https://www.linkedin.com"}>
+            <BsLinkedin />
+          </Link>
+          <Link href={"https://www.youtube.com"}>
+            <BsYoutube />
+          </Link>
+          <Link href={"https://www.twitter.com"}>
+            <FaTwitter />
+          </Link>
         </div>
         <h3>Useful Links</h3>
         <div className={Styles.useful_links}>
-          <span>Privacy Policy</span>
+          <Link href={"/privacy"}>
+            <span>Privacy Policy</span>
+          </Link>
           <span>GDPR</span>
           <span>Cookies</span>
         </div>

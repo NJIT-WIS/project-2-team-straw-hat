@@ -30,6 +30,20 @@
   padding: 20px;
 }
 
+.right ul li a,
+.right ul li a:link,
+.right ul li a:visited,
+.right ul li a:hover,
+.right ul li a:active,
+.left a,
+.left a:link,
+.left a:visited,
+.left a:hover,
+.left a:active {
+  text-decoration: none;
+  color: inherit;
+}
+
 .searchBar {
   background-color: rgba(255, 255, 255, 0.3);
   color: #fff;
