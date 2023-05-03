@@ -14,7 +14,7 @@ export default function Nav() {
       <div className={Styles.left}>
         <Link href="/">MyWebClass</Link>
       </div>
-      <div>
+      <div className={Styles.hamburger}>
         <span
           onClick={() => {
             setShowHamMenu(!showHamMenu);
