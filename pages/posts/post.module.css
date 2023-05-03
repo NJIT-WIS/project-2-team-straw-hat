@@ -1,0 +1,50 @@
+.container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 40px;
+    flex-direction: column;
+    color: #fff;
+}
+
+.container h2 {
+    font-family: "Playfair Display", serif;
+    font-size: 2rem;
+}
+
+.bloglistcontainer {
+    width: 100%;
+    padding: 40px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 14px;
+}
+
+.list {
+    list-style: none;
+    width: 100%;
+}
+
+.listItem {
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.2s ease-in;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+.listItem:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.listItem a,
+.listItem a:link,
+.listItem a:visited,
+.listItem a:hover,
+.listItem a:active {
+    text-decoration: none;
+    color: inherit;
+}
