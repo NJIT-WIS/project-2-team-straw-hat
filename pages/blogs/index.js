@@ -13,7 +13,6 @@ export default function Blogs({ allPostsData }) {
                     {allPostsData.map(({ id, date, title }) => (
                         <li className={styles.listItem} key={id}>
                             <Link href={`/posts/${id}`}>{title}</Link>
-                            <br />
                             <small className={styles.lightText}>
                                 <Date dateString={date} />
                             </small>
