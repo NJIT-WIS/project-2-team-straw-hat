@@ -1,20 +1,30 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import Script from 'next/script'
+import Head from "next/head";
+import Image from "next/image";
+import Script from "next/script";
 
-import styles from '../styles/layout.module.css'
-import utilStyles from '../styles/utils.module.css'
-import Link from 'next/link'
-import Nav from './Nav'
-import Footer from './footer'
+import styles from "../styles/layout.module.css";
+import utilStyles from "../styles/utils.module.css";
+import Link from "next/link";
+import Nav from "./Nav";
+import Footer from "./footer";
 
-const name = '[Your Name]'
-export const siteTitle = 'MyWebClass.org'
+const name = "[Your Name]";
+export const siteTitle = "MyWebClass.org";
 
 export default function Layout({ children, home }) {
   return (
     <div className={styles.container}>
       <Head>
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-2VLMB9NFLF"
+        ></script>
+        <script>
+          window.dataLayer = window.dataLayer || []; function gtag()
+          {dataLayer.push(arguments)}
+          gtag('js', new Date()); gtag('config', 'G-2VLMB9NFLF');
+        </script>
+
         <link rel="icon" href="/favicon.ico" />
         <meta
           name="description"
@@ -36,7 +46,7 @@ export default function Layout({ children, home }) {
           console.log(`script loaded correctly, window.FB has been populated`)
         }
       />
-      <Nav/>
+      <Nav />
       {/* <header className={styles.header}>
         {home ? (
           <>
@@ -76,7 +86,7 @@ export default function Layout({ children, home }) {
           <Link href="/">← Back to home</Link>
         </div>
       )} */}
-      <Footer/>
+      <Footer />
     </div>
-  )
+  );
 }
