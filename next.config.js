@@ -9,7 +9,8 @@ const nextConfig = {
       "assets.vogue.com",
       "m.media-amazon.com",
       "upload.wikimedia.org",
-      "cdn.kastatic.org"
+      "cdn.kastatic.org",
+      "placehold.co"
     ],
   },
 };
