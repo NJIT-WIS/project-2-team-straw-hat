@@ -1,0 +1,43 @@
+.container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 40px;
+    flex-direction: column;
+    color: #fff;
+}
+
+.teamImagesContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 40px;
+    margin: auto;
+    margin-top: 30px;
+}
+
+.teamImageContainer h4 {
+    font-size: 2em;
+    margin: 0;
+    padding: 0;
+    font-family: "Playfair Display", serif;
+}
+
+.teamImageContainer p {
+    font-size: 1em;
+    margin: 0;
+    padding: 0;
+}
+
+.teamImageContainer {
+    padding: 0px 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.teamImage {
+    border-radius: 50% 50%;
+
+}
