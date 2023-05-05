@@ -1,5 +1,28 @@
-import '../styles/global.css'
+import Script from "next/script";
+import "../styles/global.css";
 
 export default function App({ Component, pageProps }) {
-  return <Component {...pageProps} />
+  return (
+    <>
+      <Script
+        strategy="afterInteractive"
+        src="https://www.googletagmanager.com/gtag/js?id=G-2VLMB9NFLF"
+      />
+      <Script
+        id="google-analytics"
+        strategy="afterInteractive"
+        dangerouslySetInnerHTML={{
+          __html: `
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-2VLMB9NFLF', {
+          page_path: window.location.pathname,
+          });
+          `,
+        }}
+      />
+      <Component {...pageProps} />
+    </>
+  );
 }
