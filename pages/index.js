@@ -8,8 +8,29 @@ import Date from "../components/date";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination, Navigation } from "swiper";
 import Slide from "../components/Home/slide";
+import Modal from 'react-modal'
+import { useState } from "react";
+
 
 export default function Home({ allPostsData }) {
+  const [isOpen, setIsOpen] = useState(true)
+  const customStyles = {
+     overlay: {
+        backgroundColor: 'rgba(0, 0, 0, 0.6)',
+        zIndex:10
+     },
+     content: {
+        top: '50%',
+        left: '50%',
+        right: 'auto',
+        bottom: 'auto',
+        marginRight: '-50%',
+        transform: 'translate(-50%, -50%)',
+        borderRadius:"10px",
+        zIndex:10,
+        width:"400px"
+     }
+  }
   var slidesData = [
     {
       imageURI:
@@ -40,7 +61,13 @@ export default function Home({ allPostsData }) {
         <title>{siteTitle}</title>
       </Head>
       <div className={Styles.home}>
+      <Modal isOpen={isOpen} onRequestClose={() => setIsOpen(false)} style={customStyles}>
+            <h1>This website collects cookies</h1>
+            <p>Cookies help us display personalized product recommendations and ensure you have great shopping experience</p>
+            <button onClick={() => setIsOpen(false)}>Close</button>
+         </Modal>
         <Swiper
+        style={{zIndex:1}}
           autoplay={{
             delay: 2500,
             disableOnInteraction: false,
