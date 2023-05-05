@@ -1,0 +1,13 @@
+.container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 40px;
+  flex-direction: column;
+  color: #fff;
+}
+
+.container h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 2rem;
+}
