@@ -15,18 +15,6 @@ export default function Layout({ children, home }) {
   return (
     <div className={styles.container}>
       <Head>
-        <Script
-        src="https://www.googletagmanager.com/gtag/js?id=G-2VLMB9NFLF"
-        strategy="afterInteractive"
-      />
-      <Script id="google-analytics" strategy="afterInteractive">
-        {`
-          window.dataLayer = window.dataLayer || []; function gtag()
-          {dataLayer.push(arguments)}
-          gtag('js', new Date()); gtag('config', 'G-2VLMB9NFLF');
-        `}
-      </Script>
-
         <link rel="icon" href="/favicon.ico" />
         <meta
           name="description"
