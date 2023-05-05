@@ -1,0 +1,38 @@
+.container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 40px;
+  width: 100%;
+  color: #fff;
+}
+
+.container form {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.container form label {
+  font-family: "Playfair Display", serif;
+}
+
+.container form input,
+.container form select,
+.container form textarea {
+  padding: 10px;
+  border: 0px solid #fff;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.3);
+  color: #fff;
+}
+
+.right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
