@@ -53,6 +53,8 @@ export default function Home() {
     <Layout home>
       <Head>
         <title>{siteTitle}</title>
+
+        
       </Head>
       <div className={Styles.home}>
         <Modal
