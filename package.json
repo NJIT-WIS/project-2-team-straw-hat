@@ -17,6 +17,7 @@
     "i18next": "^22.4.15",
     "i18next-browser-languagedetector": "^7.0.1",
     "i18next-http-backend": "^2.2.0",
+    "isomorphic-unfetch": "^4.0.2",
     "next": "latest",
     "next-i18next": "^13.2.2",
     "react": "18.2.0",

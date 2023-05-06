@@ -80,7 +80,7 @@ export default function Home() {
           onSwiper={(swiper) => console.log(swiper)}
         >
           {slidesData.map((item, index) => (
-            <SwiperSlide>
+            <SwiperSlide key={index}>
               <Slide item={item} />
             </SwiperSlide>
           ))}
