@@ -2,12 +2,14 @@ import { BsSearch } from "react-icons/bs";
 import Link from "next/link";
 import { RxCross1 } from "react-icons/rx";
 import Styles from "../styles/Nav.module.css";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
+import { FlagIcon } from "flag-icons";
 
 export default function Nav() {
   const [showSearchBar, setShowSearchBar] = useState(false);
   const [showHamMenu, setShowHamMenu] = useState(false);
+  const [isOpen, setIsOpen] = useState(true);
 
   return (
     <nav className={Styles.nav}>
@@ -23,42 +25,45 @@ export default function Nav() {
           {showHamMenu ? <GiHamburgerMenu /> : <RxCross1 />}
         </span>
       </div>
-      {!showHamMenu && <div className={Styles.responsive}>
-      <div className={Styles.responsiveright}>
-        <ul>
-          {showSearchBar ? (
-            <li>
-              <input
-                placeholder="Search..."
-                type="text"
-                className={Styles.searchBar}
-              />
-            </li>
-          ) : (
-            <>
-              <li>
-                <Link href={"/"}>Home</Link>
+      {!showHamMenu && (
+        <div className={Styles.responsive}>
+          <div className={Styles.responsiveright}>
+            <ul>
+              {showSearchBar ? (
+                <li>
+                  <input
+                    placeholder="Search..."
+                    type="text"
+                    className={Styles.searchBar}
+                  />
+                </li>
+              ) : (
+                <>
+                  <li>
+                    <Link href={"/"}>Home</Link>
+                  </li>
+                  <li>
+                    <Link href={"/blogs"}>Blogs</Link>
+                  </li>
+                  <li>
+                    <Link href={"/about"}>About</Link>
+                  </li>
+                  <li>
+                    <Link href={"/contact"}>Contact</Link>
+                  </li>
+                </>
+              )}
+              <li
+                onClick={() => {
+                  setShowSearchBar(!showSearchBar);
+                }}
+              >
+                {!showSearchBar ? <BsSearch /> : <RxCross1 />}
               </li>
-              <li>
-                <Link href={"/blogs"}>Blogs</Link>
-              </li>
-              <li>
-                <Link href={"/about"}>About</Link>
-              </li>
-              <li>
-                <Link href={"/contact"}>Contact</Link>
-              </li>
-            </>
-          )}
-          <li
-            onClick={() => {
-              setShowSearchBar(!showSearchBar);
-            }}
-          >
-            {!showSearchBar ? <BsSearch /> : <RxCross1 />}
-          </li>
-        </ul>
-      </div></div>}
+            </ul>
+          </div>
+        </div>
+      )}
       <div className={Styles.right}>
         <ul>
           {showSearchBar ? (
