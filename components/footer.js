@@ -1,21 +1,38 @@
-import { BsFacebook, BsInstagram, BsLinkedin, BsYoutube } from "react-icons/bs";
-
+import {
+  BsFacebook,
+  BsInstagram,
+  BsLinkedin,
+  BsYoutube,
+  BsChevronBarRight,
+  BsChevronRight,
+} from "react-icons/bs";
+import mailchimp from "../helper/mailchimp";
 import { FaTwitter } from "react-icons/fa";
 import Link from "next/link";
 import Styles from "../styles/Footer.module.css";
+import { useState } from "react";
 
 export default function Footer() {
+  const [email, setEmail] = useState("");
+  const onSubHandler = () => {
+    email != null && email != "" && mailchimp({ email });
+  };
+
   return (
     <footer className={Styles.footer}>
       <div className={Styles.left}>
         <h2>MyWebClass</h2>
+        <div className={Styles.subscribeContainer}>
+          <input
+            type="text"
+            placeholder="Subscribe to our newsletter"
+            onChange={(e) => setEmail(e.target.value)}
+          />
+          <BsChevronRight onClick={() => onSubHandler()} />
+        </div>
         <select id="Language" name="Language">
-          <option value="english">
-            <span class="fi fi-us"></span> EN
-          </option>
-          <option value="Spanish">
-            <span class="fi fi-es"></span> ES
-          </option>
+          <option value="english">EN</option>
+          <option value="Spanish">ES</option>
         </select>
       </div>
       <div className={Styles.right}>
