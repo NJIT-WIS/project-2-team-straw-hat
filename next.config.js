@@ -18,6 +18,7 @@ const nextConfig = {
       "m.media-amazon.com",
       "upload.wikimedia.org",
       "cdn.kastatic.org",
+      "placehold.co",
     ],
   },
 };
