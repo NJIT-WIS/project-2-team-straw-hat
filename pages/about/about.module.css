@@ -1,43 +1,64 @@
 .container {
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    padding: 40px;
-    flex-direction: column;
-    color: #fff;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 40px;
+  flex-direction: column;
+  color: #fff;
 }
 
 .teamImagesContainer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0px 40px;
-    margin: auto;
-    margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 40px;
+  margin: auto;
+  margin-top: 30px;
 }
 
 .teamImageContainer h4 {
-    font-size: 2em;
-    margin: 0;
-    padding: 0;
-    font-family: "Playfair Display", serif;
+  font-size: 2em;
+  margin: 0;
+  padding: 0;
+  font-family: "Playfair Display", serif;
 }
 
 .teamImageContainer p {
-    font-size: 1em;
-    margin: 0;
-    padding: 0;
+  font-size: 1em;
+  margin: 0;
+  padding: 0;
 }
 
 .teamImageContainer {
-    padding: 0px 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+  padding: 0px 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .teamImage {
-    border-radius: 50% 50%;
+  border-radius: 50% 50%;
+}
 
+.donateNowButton {
+  width: 100%;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.donateNowButton span {
+  margin-top: 20px;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  transition: all 0.2s ease-in;
+  cursor: pointer;
+}
+
+.donateNowButton span:hover {
+  background-color: #fff;
+  color: black;
 }
