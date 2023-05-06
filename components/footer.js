@@ -9,6 +9,14 @@ export default function Footer() {
     <footer className={Styles.footer}>
       <div className={Styles.left}>
         <h2>MyWebClass</h2>
+        <select id="Language" name="Language">
+          <option value="english">
+            <span class="fi fi-us"></span> EN
+          </option>
+          <option value="Spanish">
+            <span class="fi fi-es"></span> ES
+          </option>
+        </select>
       </div>
       <div className={Styles.right}>
         <h3>Socials</h3>

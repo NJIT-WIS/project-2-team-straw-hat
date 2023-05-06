@@ -1,7 +1,8 @@
 import Script from "next/script";
 import "../styles/global.css";
+import "../node_modules/flag-icons/css/flag-icons.min.css";
 
-export default function App({ Component, pageProps }) {
+function App({ Component, pageProps }) {
   return (
     <>
       <Script
@@ -26,3 +27,5 @@ export default function App({ Component, pageProps }) {
     </>
   );
 }
+
+export default App;
