@@ -24,6 +24,7 @@ export default function Footer() {
         <h2>MyWebClass</h2>
         <div className={Styles.subscribeContainer}>
           <input
+            id="subcribe_newsletter"
             type="text"
             placeholder="Subscribe to our newsletter"
             onChange={(e) => setEmail(e.target.value)}
