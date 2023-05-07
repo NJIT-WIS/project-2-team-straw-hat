@@ -1,14 +1,16 @@
 // Import the Playwright configuration
 import config from "../playwright.config.js";
 import { test, expect } from "@playwright/test";
+const { chromium } = require('playwright');
 
 test.describe("Subscribe_newsletter", () => {
  let page;
 
 
- test.beforeEach(async ({ browser }) => {
+ test.beforeEach(async () => {
+  const browser = await chromium.launch();
    page = await browser.newPage();
-   await page.goto(config.use.baseURL + "/");
+   await page.goto(config.use.baseURL);
    await page.setViewportSize({ width: 1280, height: 800 });
  });
 
