@@ -51,11 +51,6 @@ export default function Home() {
 
   return (
     <Layout home>
-      <Head>
-        <title>{siteTitle}</title>
-
-        
-      </Head>
       <div className={Styles.home}>
         <Modal
           isOpen={isOpen}
