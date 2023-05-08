@@ -1,11 +1,10 @@
-// Import the Playwright configuration
 import config from "../playwright.config.js";
 import { test, expect } from "@playwright/test";
 const { chromium } = require('playwright');
 
-test.describe("Subscribe_newsletter", () => {
- let page;
 
+test.describe("Performance tests",async () => {
+ let page;
  test.beforeEach(async () => {
   const browser = await chromium.launch();
    page = await browser.newPage();
@@ -13,14 +12,17 @@ test.describe("Subscribe_newsletter", () => {
    await page.setViewportSize({ width: 1280, height: 800 });
  });
 
-
- test.afterEach(async () => {
+ test.afterAll(async () => {
    await page.close();
  });
 
-
- test("Check for subscribe field in footer", async () => {
-   const labelElements = await page.$$("#subcribe_newsletter");
-   expect(labelElements).toBeTruthy();
+ test("Performance Test", async ({ page }) => {
+   // Measure the load time of the website
+   const loadStartTime = Date.now();
+   await page.waitForLoadState("networkidle");
+   const loadTime = Date.now() - loadStartTime;
+   expect(loadTime).toBeLessThanOrEqual(5000); // 5 seconds
  });
 });
+
+
