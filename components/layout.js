@@ -9,6 +9,7 @@ export default function Layout({ children }) {
     <div className={styles.container}>
       <Head>
         {/* Twitter meta tags */}
+        <link rel="icon" type="image/x-icon" href="https://njit-wis.github.io/project-2-team-straw-hat/favicon.ico"/>
         <meta
           name="description"
           content="At MyWebClass, we believe that every child deserves the opportunity to learn and reach their full potential. That is why we have created a range of courses and resources specifically designed to help children of all ages and abilities develop their skills and knowledge in a fun and engaging way."
