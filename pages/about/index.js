@@ -46,6 +46,18 @@ export default function About() {
                 brighter tomorrow for generations to come.
               </p>
               <div className={styles.teamImagesContainer}>
+              <div className={styles.teamImageContainer}>
+                  <Image
+                    priority
+                    src={"https://njit-wis.github.io/project-2-team-straw-hat/keith.jpeg"}
+                    height={240}
+                    width={240}
+                    className={styles.teamImage}
+                    alt={"Hero Image"}
+                  />
+                  <h4>Keith Williams</h4>
+                  <p>Instructor</p>
+                </div>
                 <div className={styles.teamImageContainer}>
                   <Image
                     priority
@@ -56,7 +68,7 @@ export default function About() {
                     alt={"Hero Image"}
                   />
                   <h4>Pushti Shah</h4>
-                  <p>Software Developer</p>
+                  <p>Developer</p>
                 </div>
                 <div className={styles.teamImageContainer}>
                   <Image
@@ -69,7 +81,7 @@ export default function About() {
                     alt={"Hero Image"}
                   />
                   <h4>Preet Patel</h4>
-                  <p>Web Developer</p>
+                  <p>Developer</p>
                 </div>
               </div>
             </section>
