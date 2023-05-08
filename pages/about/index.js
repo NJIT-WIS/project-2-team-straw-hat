@@ -61,7 +61,7 @@ export default function About() {
                 <div className={styles.teamImageContainer}>
                   <Image
                     priority
-                    src={"/preet.jpeg"}
+                    src={"https://njit-wis.github.io/project-2-team-straw-hat/preet.jpeg"}
                     height={240}
                     width={240}
                     object-fit="contain"
