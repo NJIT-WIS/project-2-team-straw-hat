@@ -12,3 +12,15 @@
 | Privacy page popup                                                                | 2            | Completed | Pushti Shah, 2023-04-26  | 2023-04-28   | Development   | Privacy page popup                              |
 | Privacy pop up agreement                                                          | 2            | Completed | Pushti Shah, 2023-04-26  | 2023-04-28   | Development   | privacy pop up agreement                        |
 | Google analytics                                                                  | 2            | Completed | Pushti Shah, 2023-04-26  | 2023-05-06   | Development   | Google analytics tracker                        |
+| Enabling github pages | 1  | Completed | Preet Patel, 04-11-2023  | 04-24-2023  | Development | Activated github pages |
+| Homepage | 3 |  Completed | Preet Patel,  04-11-2023  | 04-24-2023   | Development | Created homepage |
+| Privacy page | 2 | Completed | Preet Patel,  04-11-2023  | 04-24-2023  | Development   | Created privacy page with the privacy policy|
+| Categories page | 2  | Completed | Preet Patel,  04-11-2023  | 05-05-2023  | Development   | Courses offered  |
+| Responsive | 3 | Completed | Preet Patel,  04-11-2023  | 05-04-2023  | Development   | responsive website across all devices |
+| Contact Page | 2  |  Completed | Preet Patel,  04-11-2023  | 05-05-2023   | Development |     |
+| Cookies page | 1 | Completed | Preet Patel,  04-11-2023  | 05-05-2023   | Development   | cookies page with hwy we use cookies |
+| Internationalization | 2 | Completed | Preet Patel,  04-11-2023  | 05-06-2023  | Development   | i18n package     |
+| Mailchimp | 3 | Completed | Preet Patel,  04-11-2023  | 05-06-2023   | Development   | newletter subscribe |
+| Metatags | 2  | Completed | Preet Patel,  04-11-2023  | 05-06-2023    | Development   | SEO |
+| Favicon | 1   | Completed | Preet Patel,  04-11-2023  | 05-06-2023    | Development   | icon  |
+| Playwright for newsletter | 2 | Completed | Preet Patel,  04-11-2023  | 05-06-2023  | Development   | testing newletter field |                    
