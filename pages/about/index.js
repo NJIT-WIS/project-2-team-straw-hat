@@ -49,7 +49,7 @@ export default function About() {
                 <div className={styles.teamImageContainer}>
                   <Image
                     priority
-                    src={"/pushti.jpg"}
+                    src={"https://njit-wis.github.io/project-2-team-straw-hat/pushti.jpg"}
                     height={240}
                     width={240}
                     className={styles.teamImage}
