@@ -19,6 +19,7 @@ const nextConfig = {
       "upload.wikimedia.org",
       "cdn.kastatic.org",
       "placehold.co",
+      "njit-wis.github.io"
     ],
   },
 };
