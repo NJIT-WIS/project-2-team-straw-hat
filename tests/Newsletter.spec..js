@@ -14,8 +14,9 @@ test.describe("Subscribe_newsletter", () => {
  });
 
 
- test.afterEach(async () => {
+ test.afterEach(async ({browser}) => {
    await page.close();
+   await browser.close()
  });
 
 
