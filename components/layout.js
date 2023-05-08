@@ -43,7 +43,7 @@ export default function Layout({ children }) {
         />
         <meta
           name="keywords"
-          content="education learning Technology Science Art"
+          content="education learning Technology Science Art artificial-intelligence School administrators AI-driven education  Agile and Lean methodologies  educational transformation  learning outcomes  "
         />
         <title>MyWebClass</title>
       </Head>
