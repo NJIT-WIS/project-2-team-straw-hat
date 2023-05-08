@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Layout from "../../components/layout";
 import styles from "./about.module.css";
+import Link from "next/link"
 
 export default function About() {
   return (
@@ -27,7 +28,7 @@ export default function About() {
             </section>
             <div className={styles.donateNowButton}>
                 <p>If you support our cause please donate and subcribe to our newletter below in the footer section.</p>
-              <span>Donate now</span>
+                <Link href="/contact"><span>Donate now</span></Link>
             </div>
             <h1 class="fw-bold border-bottom" id="title">
               The Team
