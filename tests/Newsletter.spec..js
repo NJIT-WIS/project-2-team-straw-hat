@@ -6,7 +6,6 @@ const { chromium } = require('playwright');
 test.describe("Subscribe_newsletter", () => {
  let page;
 
-
  test.beforeEach(async () => {
   const browser = await chromium.launch();
    page = await browser.newPage();
@@ -15,8 +14,9 @@ test.describe("Subscribe_newsletter", () => {
  });
 
 
- test.afterEach(async () => {
+ test.afterEach(async ({browser}) => {
    await page.close();
+   await browser.close()
  });
 
 
